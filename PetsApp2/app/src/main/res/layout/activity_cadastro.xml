@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroActivity">
+    android:orientation="vertical"
+    tools:context=".CadastroActivity"
+    android:background="@drawable/login_wallpaper">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/name_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_arrow">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRO"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_hello_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Olá, cadastre-se para acompanhar as novidades do mundo pet."
+        android:layout_marginTop="70dp"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="@color/dark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp">
+
+        <EditText
+            android:id="@+id/email_cadastro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Email"
+            android:padding="15dp"
+            android:background="@drawable/button_login">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+
+        <EditText
+            android:id="@+id/senha_cadastro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Senha"
+            android:padding="15dp"
+            android:background="@drawable/button_login">
+
+        </EditText>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp">
+
+        <EditText
+            android:id="@+id/confirmar_senha_cadastro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Confirmar Senha"
+            android:padding="15dp"
+            android:background="@drawable/button_login">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Cadastrar"
+        android:background="@drawable/button_next"
+        android:textColor="@color/dark"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_marginTop="600dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possuí cadastro? Faça o login aqui."
+        android:textSize="16dp"
+        android:textColor="@color/dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="680dp"/>
+
+</RelativeLayout>
